@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import BrowserRouter from 'react-dom'
 
 const App = () => {
   return (
@@ -8,4 +9,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
