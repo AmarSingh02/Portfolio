@@ -1,11 +1,39 @@
 import React from 'react';
-import BrowserRouter from 'react-dom'
+
+import { BrowserRouter, Routes, Route } from  "react-router-dom";
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import RootLayout from './Layout/RootLayout';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Footer from './Component/Footer';
+import Header from './Component/Header';
+import RootLayout from './Layout/RootLayout';
 
 const App = () => {
   return (
-    <div>
-      <p className='text-center bg-suces'>Hello Bootstarp</p>
-    </div>
+    <>
+
+  {/* <Helmet>
+    <title>Amar's Portfolio</title>
+    <meta name="description" content="Now More About me go through my digital portfolio"/>
+  </Helmet> */}
+
+
+  <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<RootLayout />} >
+        <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={"Not found"} />
+
+          
+         
+      </Route>
+      </Routes>
+    </BrowserRouter>
+
+  </>
   )
 }
 
