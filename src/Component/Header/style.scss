@@ -1,40 +1,38 @@
-@import '../../Assests/sass/Main.scss';
+@import "../../Assests/sass/Main.scss";
 
-.header_section{
-     background-color: #000000bd;
-    box-shadow: 0 2px 20px #00000036;
-    padding: 10px
+// .header_section{
+a {
+  color: none !important;
 }
-.left_header{
-    a{
-        text-decoration: none;
-        color: none;
-    }
-    p{
-        font-size: 35px;
-        font-weight: bold;
-        font-family: ui-sans-serif;
-        display: inline;
-         color: white;
-        
-    }
+.my_name_logo {
+  a {
+    text-decoration: none;
+  }
+  //   a:hover {
+  //     color: #fff !important;
+  //   }
+}
+.header_Sec {
+  background-color: $light_blue;
+  padding: 5px;
 }
 
-.header_right {
-    a{
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 20px;
-         color: white;
-        text-decoration: none;
-        text-align: center;
-        margin-top: -8px;
-        &:hover{
-            color: skyblue;
-            text-decoration: underline;
-            transition: .5s;
-            transform: scale(1.04,1.05);
-        }
-    }
+.my_name_logo_text {
+  font-size: 42px !important;
+  color: #fff;
+  font-family: Times New Roman, Times, serif;
+  font-weight: bold;
+}
 
+.header_ul {
+  li {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: poppins;
+    color: #fff !important;
+
+    a:hover {
+      color: #fff !important;
+    }
+  }
 }
