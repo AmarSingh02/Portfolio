@@ -17,6 +17,10 @@ a {
   padding: 5px;
 }
 
+.navbar-light .navbar-nav .nav-link.active{
+  color: #fff !important;
+}
+
 .my_name_logo_text {
   font-size: 42px !important;
   color: #fff;
@@ -31,8 +35,6 @@ a {
     font-family: poppins;
     color: #fff !important;
 
-    a:hover {
-      color: #fff !important;
-    }
+   
   }
 }

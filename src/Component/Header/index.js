@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // Import NavLink from react-router-dom
 import "./style.scss";
 
 const Header = () => {
@@ -8,13 +8,12 @@ const Header = () => {
       <section className="header_Sec">
         <div className="container-fluid">
           <div className="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-blue my_name_logo">
-              <Link to='/' >
-              <span className="my_name_logo_text">  Amar Singh</span>
-              
-              </Link>
+            <nav className="navbar navbar-expand-lg navbar-light bg-blue my_name_logo">
+              <NavLink to="/" className="navbar-brand">
+                <span className="my_name_logo_text">Amar Singh</span>
+              </NavLink>
               <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarNav"
@@ -22,27 +21,40 @@ const Header = () => {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
               <div
-                class="collapse navbar-collapse justify-content-center"
+                className="collapse navbar-collapse justify-content-center"
                 id="navbarNav"
               >
-                <ul class="navbar-nav header_ul ">
-                  <li class="nav-item active">
-                    <Link to='/' class="nav-link" >
+                <ul className="navbar-nav header_ul">
+                  <li className="nav-item">
+                    <NavLink
+                      exact
+                      to="/"
+                      className="nav-link"
+                      activeClassName="active" // Apply 'active' class when this link is active
+                    >
                       Home
-                    </Link>
+                    </NavLink>
                   </li>
-                  <li class="nav-item">
-                    <Link to="/about" class="nav-link" >
+                  <li className="nav-item">
+                    <NavLink
+                      to="/about"
+                      className="nav-link"
+                      activeClassName="active" // Apply 'active' class when this link is active
+                    >
                       About me
-                    </Link>
+                    </NavLink>
                   </li>
-                  <li class="nav-item">
-                    <Link class="nav-link" to="/">
-                      My Skiils
-                    </Link>
+                  <li className="nav-item">
+                    <NavLink
+                      to="/skills"
+                      className="nav-link"
+                      activeClassName="active" // Apply 'active' class when this link is active
+                    >
+                      My Skills
+                    </NavLink>
                   </li>
                 </ul>
               </div>
