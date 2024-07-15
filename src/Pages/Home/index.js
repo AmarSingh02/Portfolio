@@ -5,11 +5,26 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className='home_main'>
-      Home 
+    <>
+      <div className="section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <h1>I am <span style={{color:'#1d194c'}}>Amar Singh </span></h1>
+              <p></p>
+            </div>
+            <div className="col-md-6 profile">
 
-      <SlideAnimationButton url='/about' btnName="Contact Us"> </SlideAnimationButton>
-    </div>
+              <div className="my_profile">
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ 
+    </>
   )
 }
 

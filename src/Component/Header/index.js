@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom"; // Import NavLink from react-router-dom
 import "./style.scss";
+import SlideAnimationButton from "../ContactButton";
 
 const Header = () => {
   return (
@@ -57,8 +58,17 @@ const Header = () => {
                     </NavLink>
                   </li>
                 </ul>
+
+               
               </div>
+              <div className="slide_btn d-flex align-items-center">
+                <div className="slide_btn_right">
+                <SlideAnimationButton url='/about' btnName="Contact Us"> </SlideAnimationButton>
+                </div>
+                
+                </div>
             </nav>
+            
           </div>
         </div>
       </section>
