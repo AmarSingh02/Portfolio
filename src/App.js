@@ -9,6 +9,7 @@ import About from './Pages/About';
 import Footer from './Component/Footer';
 import Header from './Component/Header';
 import RootLayout from './Layout/RootLayout';
+import ContactUs from './Pages/ContactUs';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/" element={<RootLayout />} >
         <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="*" element={"Not found"} />
 
           

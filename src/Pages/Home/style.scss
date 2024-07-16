@@ -4,3 +4,15 @@
     // background-color: $light_blue;
     padding: 20px;
 }
+
+.my_profile{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+}

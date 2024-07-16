@@ -8,7 +8,6 @@ const SlideAnimationButton = (props) => {
     {/* <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button> */}
     <div className='animatedbutton'>
 
-  
       <Link to={props.url}  className="glow-on-hover" >{props.btnName}</Link>
       </div>
     </>
