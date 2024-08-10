@@ -69,6 +69,7 @@ button {
         transform: translateX(-200%);
         opacity: 0;
       }
+      
 
       svg {
         width: 100%;
@@ -132,3 +133,7 @@ button {
 
 }
 }
+
+.icon--left{
+  margin-left: -16px !important;
+ }

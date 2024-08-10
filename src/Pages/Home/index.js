@@ -12,7 +12,10 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h1>My name is <span style={{color:'#1d194c'}}>Amar Singh </span></h1>
+            
+            <h3>Hello I'm  <br /> <span style={{color:'#1d194c', fontSize:'42px'}}>Amar Singh </span></h3>
+            
+              
               <p>I'm <h3> Frontend web developer </h3> passionate about creating intuitive and user-friendly web applications. I am excited to dive into the world of web development and make a meaningful contribution to any team I am a part of.</p>
               <SwipeContactButton/>
             </div>

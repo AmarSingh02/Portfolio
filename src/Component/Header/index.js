@@ -11,7 +11,10 @@ const Header = () => {
           <div className="row">
             <nav className="navbar navbar-expand-lg navbar-light bg-blue my_name_logo">
               <NavLink to="/" className="navbar-brand">
-                <span className="my_name_logo_text">Amar Singh</span>
+              <div className="logo">
+              <span className="my_name_logo_text">Amar Singh</span>
+              </div>
+               
               </NavLink>
               <button
                 className="navbar-toggler"

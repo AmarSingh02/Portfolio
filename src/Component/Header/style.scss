@@ -37,3 +37,29 @@ a {
    
   }
 }
+
+.logo{
+  position: relative;
+  content: "";
+
+
+  // &::after{
+  //     // position: absolute;
+  //     // content: "";
+  //     // width: 100px;
+  //     // height: 100px;
+  //     // background: #000;
+
+  //     position: absolute;
+  //     content: "";
+  //     width: 280px;
+  //     height: 90px;
+  //     background: #000;
+  //     border-radius: 0 0 125px 125px;
+  //     top: -34px;
+  //     left: 0;
+  //     opacity: .8;
+  //     z-index: -99;
+  //     margin: 18px -24px;
+  // }
+}
