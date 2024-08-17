@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom"; // Import NavLink from react-router-dom
 import "./style.scss";
 import SlideAnimationButton from "../ContactButton";
+import SwipeContactButton from "../SwipeContactButton";
 
 const Header = () => {
   return (
@@ -67,6 +68,7 @@ const Header = () => {
               <div className="slide_btn d-flex align-items-center">
                 <div className="slide_btn_right">
                 <SlideAnimationButton url='/about' btnName="Contact Us"> </SlideAnimationButton>
+                {/* <SwipeContactButton url='/about'  btnName="Contact Us"></SwipeContactButton> */}
                 </div>
                 
                 </div>
