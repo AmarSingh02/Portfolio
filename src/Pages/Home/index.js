@@ -92,6 +92,8 @@ const Home = () => {
         </div>
       </section>
 
+  
+
       <section className="my_skil_Section">
         <Fade direction="up" triggerOnce>
           <div className="skill_heading text-center">
