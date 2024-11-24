@@ -1,25 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { GoArrowRight } from "react-icons/go";
+import { GoDownload } from "react-icons/go";
 import './style.scss'
 
 const SwipeContactButton = (props) => {
   return (
     <div className='swipeContactButtton'>
-    <Link to="/contact">
-
+    <a href='./Assests/pdfAmar_Singh_Frontend_Resume.pdf'  target='is_blank' download="">
+  
       <div class="btn-container">
   <button>
-    <span class="text">Contact Me</span>
+    <span class="text">Download CV </span>
     <div class="icon-container">
       <div class="icon icon--left">
-        <GoArrowRight/>
+        <GoDownload/>
       </div>
      
     </div>
   </button>
 </div>
-    </Link>
+    </a>
 
 
 

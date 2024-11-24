@@ -11,18 +11,16 @@ a {
   
 }
 .header_Sec {
-  box-shadow: 0 2px 20px rgb(0 0 0 / 40%);
-   background: #212529d6;
+  // box-shadow: 0 2px 20px rgb(0 0 0 / 40%);
+  //  background: #212529d6;
   
 }
 
-.navbar-light .navbar-nav .nav-link.active{
-  color: #fff !important;
-}
+
 
 .my_name_logo_text {
   font-size: 42px !important;
-  color: #fff;
+  // color: #fff;
   font-family: Times New Roman, Times, serif;
   font-weight: bold;
 }
@@ -32,7 +30,7 @@ a {
     font-size: 21px;
     font-weight: bold;
     font-family: poppins;
-    color: #fff !important;
+    // color: #fff !important;
 
    
   }
@@ -43,23 +41,11 @@ a {
   content: "";
 
 
-  // &::after{
-  //     // position: absolute;
-  //     // content: "";
-  //     // width: 100px;
-  //     // height: 100px;
-  //     // background: #000;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #32a4d5!important;
+}
 
-  //     position: absolute;
-  //     content: "";
-  //     width: 280px;
-  //     height: 90px;
-  //     background: #000;
-  //     border-radius: 0 0 125px 125px;
-  //     top: -34px;
-  //     left: 0;
-  //     opacity: .8;
-  //     z-index: -99;
-  //     margin: 18px -24px;
-  // }
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+  color: #4e4bb0 !important;
 }
